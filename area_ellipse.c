@@ -1,12 +1,12 @@
 /* -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
 
-* File Name : square.c
+* File Name : ellipse.c
 
-* Purpose : This program calculates the area of a square, length x length
+* Purpose :This program calculates the area of a ellipse, pi x ( axis a X axis b)
 
 * Creation Date : 06-11-2019
 
-* Last Modified : Wed Nov  6 14:04:08 2019
+* Last Modified : Wed Nov  6 14:27:22 2019
 
 * Created By : Jarrod Hatting
 _._._._._._._._._._._._._._._._._._._._._.*/
@@ -16,13 +16,14 @@ _._._._._._._._._._._._._._._._._._._._._.*/
 
 int main()
 {
-    double length = 40.0;
+    double axisA = 7.0;
+    double axisB = 4.0;
+    double pi = 3.14159265359;
     double area = 0.0;
 
-    area = length * length;
+    area = pi * (axisA * axisB);
 
     printf("Area is: %.2fsqin\n", area);
 
     return (0);
 }
-
