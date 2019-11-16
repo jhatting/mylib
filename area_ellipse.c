@@ -2,11 +2,11 @@
 
 * File Name : ellipse.c
 
-* Purpose :This program calculates the area of a ellipse, pi x ( axis a X axis b)
+* Purpose : program calculates the area of a ellipse, pi x ( axis a X axis b)
 
 * Creation Date : 06-11-2019
 
-* Last Modified : Wed Nov  6 14:27:22 2019
+* Last Modified : Fri Nov 15 19:23:16 2019
 
 * Created By : Jarrod Hatting
 _._._._._._._._._._._._._._._._._._._._._.*/
