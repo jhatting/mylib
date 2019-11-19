@@ -6,7 +6,7 @@
 
 * Creation Date : 06-11-2019
 
-* Last Modified : Wed Nov  6 15:54:09 2019
+* Last Modified : Tue Nov 19 14:43:33 2019
 
 * Created By : Jarrod Hatting
 _._._._._._._._._._._._._._._._._._._._._.*/
@@ -19,6 +19,9 @@ int main()
     double length = 4.0;
     double sqrt(double arg);
     double area = 0.0;
+
+    printf("Enter the one length of the of the equilateral triangle:  ");
+    scanf("%lf", &length);
 
     area = (sqrt(3)/4)*(length*length);
 
