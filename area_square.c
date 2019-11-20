@@ -6,7 +6,7 @@
 
 * Creation Date : 06-11-2019
 
-* Last Modified : Wed Nov  6 16:30:58 2019
+* Last Modified : Wed Nov 20 14:30:06 2019
 
 * Created By : Jarrod Hatting
 _._._._._._._._._._._._._._._._._._._._._.*/
@@ -19,6 +19,9 @@ int main()
 {
     double length = 40.0;
     double area = 0.0;
+
+    printf("What is the length of the square: ");
+    scanf("%lf", &length);
 
     area = length * length;
 
