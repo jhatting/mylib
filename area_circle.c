@@ -2,11 +2,11 @@
 
 * File Name : AreaOfCircle.c
 
-* Purpose :calculates the area of a circle, pi x (radius x radius).
+* Purpose :Calculates the area of a circle, pi x (radius x radius).
 
 * Creation Date : 06-11-2019
 
-* Last Modified : Tue Nov 19 14:27:31 2019
+* Last Modified : Thu Nov 21 19:08:25 2019
 
 * Created By : Jarrod Hatting
 _._._._._._._._._._._._._._._._._._._._._.*/
