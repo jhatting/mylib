@@ -2,7 +2,15 @@
 
 * File Name : dayWeekMonthYearCal.c
 
-* Purpose : Calculates daily,weekly,monthly,annaul Salary
+* Purpose : Calculates daily,weekly,monthly,annual Salary
+Providing Gross & Nett earnings, and Taxes for an Unmarried individual
+under USA CA income tax brackets 10% Up to $9,875
+12%: Income between $9,875 to $40,125
+22%: Income between $40,125 to $85,525
+24%: Income between $85,525 to $163,300
+32% Income between $163,300 to $207,350
+35%: Income between $207,350 to $518,400
+37%: Income over $518,400
 Practicing (if else)
 
 * Creation Date : 29-11-2019
