@@ -1,6 +1,6 @@
 /* -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
 
-* File Name : dayWeekMonthYearCal.c
+* File Name : TaxPayDayWeekMonthYearCal.c
 
 * Purpose : Calculates daily,weekly,monthly,annual Salary
 Providing Gross & Nett earnings, and Taxes for an Unmarried individual
