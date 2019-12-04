@@ -7,7 +7,7 @@
 
 * Creation Date : 04-12-2019
 
-* Last Modified : Wed Dec  4 12:56:41 2019
+* Last Modified : Wed Dec  4 14:41:59 2019
 
 * Created By : Jarrod Hatting
 _._._._._._._._._._._._._._._._._._._._._.*/
@@ -20,45 +20,35 @@ int main ()
 {
     int randomNumber = 0;
     int guess = 0;
-    int maximumNumberOfGuesses = 5;
+    int numberOfGuesses = 5;
     time_t t;
 //Initialization of random number generator
     srand((unsigned) time(&t));
 //get the random number
     randomNumber =rand() %21;
-
+    
     printf("\nThis is a guessing game.");
-    printf("\nI have chosen a number between 0 and 20, which you must guess. \n\n");
-    printf("You have %d tries left\n", maximumNumberOfGuesses);
-    printf("Enter a guess: ");
-    scanf("%d", &guess);
+    printf("\nI have chosen a number between 0 and 20, which you must guess. \n");
 
-    if (maximumNumberOfGuesses <= 5)
+    while(numberOfGuesses > 0)
     {
-        --maximumNumberOfGuesses;
-        while (guess == randomNumber)
-        {
-        printf("Congratulations, You guessed it!");
-        break;
-        }
-        while (guess > randomNumber)
-        {
-            printf("Sorry, %d is wrong. My number is less than that.", guess);
-            break;
-        }
-        while (guess < randomNumber)
-        {
-            printf("Sorry, %d is wrong. My number is more than that.", guess);
-            break;
-        }
-        printf("You have %d tries left\n", maximumNumberOfGuesses);
-        printf("Enter a guess: ");
+        printf("\nYou have %d tr%s left.", numberOfGuesses, numberOfGuesses == 1 ? "y" : "ies" );
+        printf("\nEnter a guess: ");
         scanf("%d", &guess);
-    }
-    else if (maximumNumberOfGuesses > 5)
-    {
-        printf("GAME OVER");
-    }
+        if (guess == randomNumber)
+        {
+            printf("\nCongratulations. You guessed it!\n");
+            break;
+        }
+        else if (guess < 0 || guess > 20) // checking for an invalid guess
+            printf("I said the number is between 0 and 20./n");
+            else if (randomNumber > guess)
+                printf("Sorry, %d is wrong. My number is greater than that. \n", guess);
+                else if (randomNumber < guess)
+                    printf("Sorry, %d is wrong. My number is less than that. \n", guess);
 
+        --numberOfGuesses;
+    }
+    printf("GAME OVER, The answer is %d\n", randomNumber);
     return(0);
 }
