@@ -20,9 +20,16 @@ _._._._._._._._._._._._._._._._._._._._._.*/
 int main()
 {
     int n = 0;
-    int i = 0;
+    int i = 1;
 
     printf("Upper limit: ");
     scanf("%d", &n);
+
+    while (i < n)
+    {
+        
+        printf("%d, ", i);
+        i= i + 2;
+    }
 return (0);
 }
