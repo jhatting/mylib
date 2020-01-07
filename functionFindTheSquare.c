@@ -30,7 +30,7 @@ int main()
     scanf("%d", &input);
 
     result = square (input);
-    printf("The Square of %d is : %d", input, result);
+    printf("The Square of %d is : %d\n", input, result);
     return (0);
 }
 
