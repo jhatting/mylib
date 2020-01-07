@@ -6,7 +6,7 @@
 
 * Creation Date : 07-01-2020
 
-* Last Modified : Tue Jan  7 11:27:00 2020
+* Last Modified : Tue Jan  7 11:48:34 2020
 
 * Created By : Jarrod Hatting
 _._._._._._._._._._._._._._._._._._._._._.*/
@@ -28,6 +28,28 @@ void markBoard(char mark);
 
 int main ()
 {
+    int gameStatus;
+    char mark;
+    player = 1;
+
+    do
+    {
+        displayBoard();
+        //change turns
+        player = (player % 2) ? 1 : 2;
+        //get input
+        printf("Player %d, enter a number: ", player);
+        scanf ("%d", &choice);
+        //set the correct character based on player turn
+        mark = (player == 1) ? 'X' : 'O';
+        //set the board based on user choice or invalid choice
+        markBoard (mark);
+        
+        gameStatus = checkForWin();
+        
+        player++;
+
+    }while (gameStatus == -1);
 
     return (0);
 }
@@ -139,6 +161,6 @@ void markBoard(char mark)
             printf("Invalid move ");
 
             player--;
-            getch();
+            getchar();
         }
 }
