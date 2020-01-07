@@ -6,7 +6,7 @@
 
 * Creation Date : 07-01-2020
 
-* Last Modified : Tue Jan  7 11:48:34 2020
+* Last Modified : Tue Jan  7 11:49:51 2020
 
 * Created By : Jarrod Hatting
 _._._._._._._._._._._._._._._._._._._._._.*/
@@ -117,17 +117,17 @@ void displayBoard()
     printf("Player 1 (X) - Player 2 (0) \n\n\n");
 
     printf("      |      |      \n");
-    printf("  %c  |  %c  |  %c  \n", square[1], square[2], square[3]);
+    printf("   %c  |  %c   |  %c  \n", square[1], square[2], square[3]);
 
     printf("______|______|______\n");
     printf("      |      |      \n");
 
-    printf("  %c  |  %c  |  %c  \n", square[4], square[5], square[6]);
+    printf("   %c  |  %c   |  %c  \n", square[4], square[5], square[6]);
 
     printf("______|______|______\n");
     printf("      |      |      \n");
 
-    printf("  %c  |  %c  |  %c  \n", square[7], square[8], square[9]);
+    printf("   %c  |  %c   |  %c  \n", square[7], square[8], square[9]);
 
     printf("      |      |      \n\n");
 }
