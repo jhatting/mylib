@@ -6,7 +6,7 @@
 
 * Creation Date : 07-01-2020
 
-* Last Modified : Tue Jan  7 11:03:08 2020
+* Last Modified : Tue Jan  7 11:27:00 2020
 
 * Created By : Jarrod Hatting
 _._._._._._._._._._._._._._._._._._._._._.*/
@@ -90,6 +90,55 @@ FUNCTION TO DRAW BOARD OF TIC TAC TOE WITH PLAYERS MARK
 void displayBoard()
 {
     system("cls");
+    printf("\n\n\tTic Tac Toe\n\n");
 
+    printf("Player 1 (X) - Player 2 (0) \n\n\n");
+
+    printf("      |      |      \n");
+    printf("  %c  |  %c  |  %c  \n", square[1], square[2], square[3]);
+
+    printf("______|______|______\n");
+    printf("      |      |      \n");
+
+    printf("  %c  |  %c  |  %c  \n", square[4], square[5], square[6]);
+
+    printf("______|______|______\n");
+    printf("      |      |      \n");
+
+    printf("  %c  |  %c  |  %c  \n", square[7], square[8], square[9]);
+
+    printf("      |      |      \n\n");
 }
 
+/****************************************
+SET THE BOARD WITH THE CORRECT CHARACTER 
+X OR O IN THE CORRECT SPOT IN THE ARRAY
+****************************************/
+void markBoard(char mark)
+{
+    if (choice == 1 && square[1] == '1')
+        square[1] = mark;
+    else if (choice == 2 && square[2] == '2')
+        square[2] = mark;
+    else if (choice == 3 && square[3] == '3')
+        square[3] = mark;
+    else if (choice == 4 && square[4] == '4')
+        square[4] = mark;
+    else if (choice == 5 && square[5] == '5')
+        square[5] = mark;
+    else if (choice == 6 && square[6] == '6')
+        square[6] = mark;
+    else if (choice == 7 && square[7] == '7')
+        square[7] = mark;
+    else if (choice == 8 && square[8] == '8')
+        square[8] = mark;
+    else if (choice == 9 && square[9] == '9')
+        square[9] = mark;
+        else 
+        {
+            printf("Invalid move ");
+
+            player--;
+            getch();
+        }
+}
