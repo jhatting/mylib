@@ -6,7 +6,7 @@
 
 * Creation Date : 07-01-2020
 
-* Last Modified : Tue Jan  7 11:49:51 2020
+* Last Modified : Tue Jan  7 11:55:30 2020
 
 * Created By : Jarrod Hatting
 _._._._._._._._._._._._._._._._._._._._._.*/
@@ -50,6 +50,11 @@ int main ()
         player++;
 
     }while (gameStatus == -1);
+
+    if (gameStatus == 1)
+        printf ("==>\aPLAYER %d WIN\n" , --player);
+        else 
+            printf("==>\aGAME DRAW\n");
 
     return (0);
 }
