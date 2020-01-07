@@ -24,8 +24,13 @@ int square(int);
 int main()
 {
     int result;
-    result = square (20);
-    printf("%d", result);
+    int input;
+    
+    printf("Input any number for Square: ");
+    scanf("%d", &input);
+
+    result = square (input);
+    printf("The Square of %d is : %d", input, result);
     return (0);
 }
 
