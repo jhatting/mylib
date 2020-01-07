@@ -3,6 +3,8 @@
 * File Name : functionStructureTest.c
 
 * Purpose : This program shows the simple structure of a function.
+    Expected Output :
+    The total is :  11
 
 * Creation Date : 07-01-2020
 
@@ -20,7 +22,7 @@ int main()
 {
     int result;
     result = sum(5, 6);
-    printf("The Total is : %d\n", result);
+    printf("The total is : %d\n", result);
     return (0);
 }
 
