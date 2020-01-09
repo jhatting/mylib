@@ -27,11 +27,10 @@ int main()
 
     printf("Input any decimal number: ");
     scanf("%d", &d);
-    
-    printf("***************RESULT***************\n");
+    printf("************CALCULATION*************\n");    
     convert = binaryToDecimal(d);
     printf("The binary value is: %d\n", convert);
-    printf("************CALCULATION*************\n");   
+    printf("************************************\n");   
 }
 
 int binaryToDecimal(int d)
@@ -49,7 +48,7 @@ int binaryToDecimal(int d)
         f = f * 10;
         printf("FORMULA = %ld\n", f);
         d = d / 2;
-        printf("Decimal changed to %d\n\n", d);
+        printf("Decimal changed to: %d\n\n", d);
     }
     return (binary);
 }
