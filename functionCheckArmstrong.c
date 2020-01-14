@@ -23,6 +23,10 @@ int main ()
 
     lastDigit = num % 10; //find the last digit of the number
     printf("lastDigit:  %d\n", lastDigit);
+    sum += lastDigit * lastDigit * lastDigit;
+    printf("sum = %d", sum);
+
+
 
     return (0);
 }
