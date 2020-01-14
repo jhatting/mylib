@@ -19,14 +19,15 @@ int main ()
 {
     int lastDigit;
     int sum = 0;
-    int num = 1634;
-
-    lastDigit = num % 10; //find the last digit of the number
-    printf("lastDigit:  %d\n", lastDigit);
-    sum += lastDigit * lastDigit * lastDigit;
-    printf("sum = %d", sum);
-
-
-
+    int num = 153;
+    while(num != 0)
+    {
+        lastDigit = num % 10; //find the last digit of the number
+        printf("lastDigit:  %d\n", lastDigit);
+        sum += lastDigit * lastDigit * lastDigit;
+        printf("sum = %d\n", sum);
+        num = num/10;
+        printf("num = %d\n", num);
+    }
     return (0);
 }
