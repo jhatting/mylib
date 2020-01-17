@@ -7,7 +7,7 @@
 
 * Creation Date : 16-01-2020
 
-* Last Modified : Thu Jan 16 14:55:53 2020
+* Last Modified : Thu Jan 16 15:17:39 2020
 
 * Created By : Jarrod Hatting
 _._._._._._._._._._._._._._._._._._._._._.*/
@@ -20,21 +20,42 @@ int main ()
 {
     int input;
     int sum = 0;
-    int t;
+    int digitCount;
     int remainder;
     int digits = 0;
 
     printf("Input the integer to want to check:\n");
     scanf("%d", &input);
 
-    t = input;
+    digitCount = input;
     //count the number of digits
-    while (t != 0)
+    while (digitCount != 0)
     {
         digits++;
         printf("digits = %d\n", digits);
-        t = t/10;
-        printf("t = %d",t);
+        digitCount = digitCount/10;
+        printf("digitCount  = %d\n\n",digitCount);
     }
+    digitCount = input;
+    while (digitCount != 0)
+    {
+        remainder = digitCount % 10;
+        printf("remainder = %d\n", remainder);
+        sum = sum + power(remainder, digits);
+        printf("sum = %d\n", sum);
+        digitCount = digitCount/10;
+        printf("digitCount = %d\n\n", digitCount);
+    }
+
     return (0);
+}
+
+int power(int n, int r)
+{
+    int c;
+    int p = 1;
+
+    for (c = 1; c <= r; c++)
+        p = p*n;
+        return p;
 }
