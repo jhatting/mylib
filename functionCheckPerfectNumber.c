@@ -37,13 +37,14 @@ int main()
 
 int checkPerfect (int num)
 {
-    int loop;
+    int loop = 1;
     int sum = 0;
     
-    for(loop=1; loop<num; loop++)
+    while(loop<num)
     {
         if (num % loop == 0)
             sum +=loop;
+            loop++;
     }
     if (sum == num)
         return 1; //perfect Number
