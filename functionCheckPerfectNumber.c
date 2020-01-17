@@ -17,30 +17,38 @@ _._._._._._._._._._._._._._._._._._._._._.*/
 
 #include <stdio.h>
 
+int checkPerfect(int);
+
 int main()
 {
-    int input;
-    int divisor = 1;
-    int result = 0;
+    int num;
+    int loop; 
+    int sum;
 
-    printf("What number is you want to check is PERFECT: ");
-    scanf("%d", &input);
-    
-    printf("\n********Checking number********\n\n");
+    printf("What number do you want to check is perfect?");
+    scanf("%d",&num);
 
-    while (divisor < input)
-    {
-        if (input % divisor == 0)
-        {
-            result = result + divisor;
-            divisor++;
-            printf("Result =%d\n", result);
-            printf("Divisor =%d\n", divisor);
-        }
-    }
-    if (result == input)
-        printf("%d is a PERFECT number", input);
-        else 
-            printf("%d is NOT a Perfect number", input);
+    if (checkPerfect(num))
+        printf("%d is a PERFECT number.", num); 
+        else
+            printf("%d is a NOT perfect number.", num);
             return (0);
 }
+
+int checkPerfect (int num)
+{
+    int loop;
+    int sum = 0;
+    
+    for(loop=1; loop<num; loop++)
+    {
+        if (num % loop == 0)
+            sum +=loop;
+    }
+    if (sum == num)
+        return 1; //perfect Number
+        else 
+            return 0; //Not perfect number
+}
+
+
