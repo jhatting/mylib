@@ -7,7 +7,7 @@
 
 * Creation Date : 16-01-2020
 
-* Last Modified : Thu Jan 16 17:53:55 2020
+* Last Modified : Thu Jan 16 18:00:41 2020
 
 * Created By : Jarrod Hatting
 _._._._._._._._._._._._._._._._._._._._._.*/
@@ -26,6 +26,7 @@ int main ()
 
     printf("Input the integer to want to check:\n");
     scanf("%d", &input);
+    printf("\n\n******FIRST PART IS TO COUNT THE NUMBER OF DIGITS******\n");
 
     digitCount = input;
     //count the number of digits
@@ -36,6 +37,7 @@ int main ()
         digitCount = digitCount/10;
         printf("digitCount  = %d\n\n",digitCount);
     }
+    printf("\n\n****2ND PART IS TO USE THE # OF DIGITS AS A POWER OF EACH # IN THE INPUT AND ADD THEM ALL ****\n\n");
     digitCount = input;
     while (digitCount != 0)
     {
