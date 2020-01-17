@@ -7,7 +7,7 @@
 
 * Creation Date : 16-01-2020
 
-* Last Modified : Thu Jan 16 15:17:39 2020
+* Last Modified : Thu Jan 16 17:53:55 2020
 
 * Created By : Jarrod Hatting
 _._._._._._._._._._._._._._._._._._._._._.*/
@@ -46,6 +46,10 @@ int main ()
         digitCount = digitCount/10;
         printf("digitCount = %d\n\n", digitCount);
     }
+    if (input == sum)
+        printf("%d is an Armstrong number\n", input);
+        else
+            printf("%d is not an Armstrong number", input);
 
     return (0);
 }
