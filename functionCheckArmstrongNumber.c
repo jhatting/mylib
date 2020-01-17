@@ -7,7 +7,7 @@
 
 * Creation Date : 16-01-2020
 
-* Last Modified : Thu Jan 16 18:00:41 2020
+* Last Modified : Thu Jan 16 18:09:07 2020
 
 * Created By : Jarrod Hatting
 _._._._._._._._._._._._._._._._._._._._._.*/
@@ -56,12 +56,15 @@ int main ()
     return (0);
 }
 
-int power(int n, int r)
+int power(int eachNumber, int totalNumberOfDigits)
 {
-    int c;
+    int c = 1;
     int p = 1;
 
-    for (c = 1; c <= r; c++)
-        p = p*n;
+    while (c <= totalNumberOfDigits)
+    {
+        p = p*eachNumber;
+        c++;
+    }
         return p;
 }
