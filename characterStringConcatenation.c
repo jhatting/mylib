@@ -25,5 +25,7 @@ int main()
     printf("Enter a string to be concatenated: ");
     scanf("%s", input);
 
-    printf(")
+    printf("\nThe string %s concatenated with %s is ::::\n", myString, input);
+    printf("\n %s", strcat(input , myString );
+    return (0);
 }
