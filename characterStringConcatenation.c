@@ -26,6 +26,6 @@ int main()
     scanf("%s", input);
 
     printf("\nThe string %s concatenated with %s is ::::\n", myString, input);
-    printf("\n %s", strcat(input , myString );
+    printf("\n %s", strcat(input , myString ));
     return (0);
 }
