@@ -14,3 +14,14 @@
 
 * Created By : Jarrod Hatting
 _._._._._._._._._._._._._._._._._._._._._.*/
+
+#include <stdio.h>
+#include <string.h>
+
+int main ()
+
+{
+    char str[] = "The quick brown fox"; //the string to be searched
+    char ch = 'q';                      // the character we are looking for
+
+}
