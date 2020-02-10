@@ -26,5 +26,5 @@ int main ()
     char *pGot_char = NULL;             //Pointer initialized to NULL
     
     pGot_char = strchr(str, ch);        //Store address where ch is found
-
+    printf("%s", pGot_char);
 }
