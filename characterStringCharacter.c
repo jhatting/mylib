@@ -23,5 +23,8 @@ int main ()
 {
     char str[] = "The quick brown fox"; //the string to be searched
     char ch = 'q';                      // the character we are looking for
+    char *pGot_char = NULL;             //Pointer initialized to NULL
+    
+    pGot_char = strchr(str, ch);        //Store address where ch is found
 
 }
