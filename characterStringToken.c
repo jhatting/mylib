@@ -20,7 +20,7 @@ _._._._._._._._._._._._._._._._._._._._._.*/
 
 int main ()
 {
-    char str[] = "hello how are you - my name is Jarrod";
+    char str[] = "hello how are you - my name is -Jarrod";
     const char s[] = "-";
     char *token;
 
