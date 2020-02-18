@@ -6,7 +6,7 @@
 
 * Creation Date : 13-02-2020
 
-* Last Modified : Tue Feb 18 13:04:52 2020
+* Last Modified : Tue Feb 18 13:19:05 2020
 
 * Created By : Jarrod Hatting
 _._._._._._._._._._._._._._._._._._._._._.*/
@@ -26,12 +26,11 @@ int main()
     scanf("%s", substring);
 
     printf("\nFirst string entered:\n%s\n", text);
-    printf("Second string entered:\n%s", substring); 
+    printf("Second string entered:\n%s\n", substring); 
     
-
-    while (buf[i] = (char) toupper(buf [i] != ‘\0’)
-        ++i;
-        printf("%s", toupper(buf, A);
+    // convert both strings to uppercase.
+    for (i = 0; (text[i] = (char)toupper(text[i])) != '\0'; ++i);
+    for (i = 0; (substring[i] = (char) toupper(substring[i])) != '\0'; ++i);
 
     return (0);
 }
