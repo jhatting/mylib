@@ -6,18 +6,20 @@
 
 * Creation Date : 13-02-2020
 
-* Last Modified : Tue Feb 18 13:19:05 2020
+* Last Modified : Tue Feb 18 13:21:54 2020
 
 * Created By : Jarrod Hatting
 _._._._._._._._._._._._._._._._._._._._._.*/
 
 #include <stdio.h>
 #include <string.h>
+#include <ctype.h>
 
 int main()
 {
     char text[100];             //Input Buffer for string to be searched
     char substring[40];         //Input buffer for string sought
+    int i;
 
     printf("Enter the string to be search (less than %d characters):\n",100);
     scanf("%s", text);
