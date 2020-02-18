@@ -6,7 +6,7 @@
 
 * Creation Date : 13-02-2020
 
-* Last Modified : Thu Feb 13 13:26:43 2020
+* Last Modified : Tue Feb 18 13:04:52 2020
 
 * Created By : Jarrod Hatting
 _._._._._._._._._._._._._._._._._._._._._.*/
@@ -22,10 +22,12 @@ int main()
     printf("Enter the string to be search (less than %d characters):\n",100);
     scanf("%s", text);
 
-    printf("\nEnter the string ",text);
+    printf("\nEnter the string sought (less than %d characters):\n", 40);
+    scanf("%s", substring);
 
-
-
+    printf("\nFirst string entered:\n%s\n", text);
+    printf("Second string entered:\n%s", substring); 
+    
 
     while (buf[i] = (char) toupper(buf [i] != ‘\0’)
         ++i;
