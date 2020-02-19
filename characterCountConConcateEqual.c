@@ -2,10 +2,23 @@
 
 * File Name : characterCountConConcateEqual.c
 
-* Purpose : Function counts the number of characters in a string(length)
+* Purpose : 
+1- Function counts the number of characters in a string(length)
 -cannot use the strlen function
 -function should take a character array as a parameter
 -Should return an int (the length)
+
+2- Function to concatenate two character strings
+- cannot use the strcat library function
+- function should take 3 parameters
+    -char result[]
+    -const char str1[]
+    -const char str2[]
+    -can return void
+
+3- Function that determines if two strings are equal 
+    - cannot use strcmp library function
+    - function should take two const char arrays as parameters and return a Boolean of true if they are equal and false otherwise
 
 
 * Creation Date : 19-02-2020
@@ -22,7 +35,7 @@ int StringLength (const char string[]);
 
 int main ()
 {
-    char word1[] = "Jarrod";
+    char word1[] = "Jarrod is a god";
     char word2[] = "ok";
     char word3[] = "Whatever";
 
