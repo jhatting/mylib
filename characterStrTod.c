@@ -7,24 +7,30 @@ argument. The second argument is a pointer to a variable, ptr say , of type char
 
 * Creation Date : 18-02-2020
 
-* Last Modified : Tue Feb 18 16:41:55 2020
+* Last Modified : Tue Feb 18 16:53:45 2020
 
 * Created By : Jarrod Hatting
 _._._._._._._._._._._._._._._._._._._._._.*/
 
 #include <stdlib.h>
+#include <stdio.h>
 
 int main ()
 {
     double value = 0 ;
-    char str[] = "3.5 2.5 1.26";    // The string to be converted 
-    char *pstr = str;               // Pointer to the string to be converted
-    char *ptr = NULL;               // Pointer to character position after conversion
+    char str[] = "3.5 2.5 1.26";        // The string to be converted 
+    char *pstr = str;                   // Pointer to the string to be converted
+    char *ptr = NULL;                   // Pointer to character position after conversion
 
     while(true)
     {
-        value = strtod(pst, &ptr); //Convert starting at pstr
-        if(pstr == ptr)             //pstr stored if no conversion..
-            br
+        value = strtod(pstr, &ptr);      //Convert starting at pstr
+        if(pstr == ptr)                 //pstr stored if no conversion..
+            break;                      //...so we are done  
+            else
+            {
+                printf(" %f", value);   //Output the resultant value
+                pstr = ptr;             // Store Start for next conversation
+            }
     }
 }
