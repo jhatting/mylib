@@ -15,5 +15,22 @@
 * Created By : Jarrod Hatting
 _._._._._._._._._._._._._._._._._._._._._.*/
 
-#include <>
-#include 
+#include <stdio.h>
+#include <stdlib.h>
+
+int StringLength (const char string[]);
+
+int main ()
+{
+    return (0);
+}
+
+int StringLength (const char string[])
+{
+    int count = 0;
+
+    while (string[count] != '\0')
+        ++count;
+
+        return (count);
+}
