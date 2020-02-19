@@ -22,6 +22,12 @@ int StringLength (const char string[]);
 
 int main ()
 {
+    char word1[] = "Jarrod";
+    char word2[] = "ok";
+    char word3[] = "Whatever";
+
+    printf("%d      %d      %d\n", StringLength(word1), StringLength(word2), StringLength(word3));
+
     return (0);
 }
 
