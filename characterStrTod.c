@@ -7,7 +7,7 @@ argument. The second argument is a pointer to a variable, ptr say , of type char
 
 * Creation Date : 18-02-2020
 
-* Last Modified : Tue Feb 18 16:53:45 2020
+* Last Modified : Tue Feb 18 16:59:58 2020
 
 * Created By : Jarrod Hatting
 _._._._._._._._._._._._._._._._._._._._._.*/
@@ -22,7 +22,7 @@ int main ()
     char *pstr = str;                   // Pointer to the string to be converted
     char *ptr = NULL;                   // Pointer to character position after conversion
 
-    while(true)
+    while(1)
     {
         value = strtod(pstr, &ptr);      //Convert starting at pstr
         if(pstr == ptr)                 //pstr stored if no conversion..
