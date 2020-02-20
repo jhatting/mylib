@@ -30,9 +30,12 @@ _._._._._._._._._._._._._._._._._._._._._.*/
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 
 int StringLength (const char string[]);
 void concate(char result[], const char str[], const char str1[]);
+bool equalStrings(const char s1[], const char s2[]);
+
 
 int main ()
 {
@@ -42,9 +45,11 @@ int main ()
     char result[50];
 
     printf("%d      %d      %d\n", StringLength(word1), StringLength(word2), StringLength(word3));
-
+ 
     concate (result, word1, word2);
-    printf("%s", result);
+    printf("%s\n", result);
+    printf("%d\n",equalStrings("Jarrod", "Jarrod"));
+    printf("%d\n",equalStrings("Jarrods", "Jarrod"));
 
     return (0);
 }
@@ -71,4 +76,18 @@ void concate(char result[], const char str1[], const char str2[])
     for (j = 0; str2[j] != '\0'; ++j)
         result[i + j] = str2[j];
         result[i+j] = '\0';
+}
+
+bool equalStrings(const char s1[], const char s2[])
+{
+    int i = 0;
+    bool isEquals = false;
+    
+    while (s1[i] == s2 [i] && s1[i] != '\0' && s2[i] != '\0' )
+        ++i;
+        if ( s1[i] == '\0' && s2[i] == '\0')
+            isEquals = true;
+            else 
+                isEquals = false;
+                return isEquals;
 }
