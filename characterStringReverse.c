@@ -64,7 +64,7 @@ int main()
     
     printf("Input string %d : \n", n);
 
-    for (i = 0; i <= n; i++)
+    for (i = 0; i < n; i++)
     {
         scanf("%s", name[i]);
     }
@@ -73,7 +73,7 @@ int main()
         for(j=0; j<=n-i; j++)
             if(strcmp(name[j], name[j+1]) > 0)
             {
-                strncpy(strncpy(temp, name[j], sizeof(temp) -1);
+                strncpy(temp, name[j], sizeof(temp) -1);
                 strncpy(name[j], name[j+1], sizeof(name[j]) - 1);
                 strncpy(name[j+1], temp, sizeof(name[j] + 1) - 1);
             }
