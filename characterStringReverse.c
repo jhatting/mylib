@@ -36,7 +36,8 @@ _._._._._._._._._._._._._._._._._._._._._.*/
 int main()
 {
     char str[100];
-    int l, i;
+    char name[23][50], temp[25];
+    int l, i, n, j;
 
     printf("\n\nPrint individual characters of string in reverse order :\n");
     printf("------------------------------------------------------------\n");
@@ -55,7 +56,32 @@ int main()
     printf("\n");
     printf("_____________________________________________________________\n");
 
+    printf("\n\nSorts the strings of an array using Bubble sort: \n");
+    printf("-----------------------------------------------------\n");
 
+    printf("Input number of strings : ");
+    scanf("%d", &n);
+    
+    printf("Input string %d : \n", n);
 
+    for (i = 0; i <= n; i++)
+    {
+        scanf("%s", name[i]);
+    }
 
+    for(i = 1; i <=n; i++)
+        for(j=0; j<=n-i; j++)
+            if(strcmp(name[j], name[j+1]) > 0)
+            {
+                strncpy(strncpy(temp, name[j], sizeof(temp) -1);
+                strncpy(name[j], name[j+1], sizeof(name[j]) - 1);
+                strncpy(name[j+1], temp, sizeof(name[j] + 1) - 1);
+            }
+
+    printf("The strings appear after sorting :\n");
+
+    for (i = 0; i <=n ; i++)
+    printf("%s\n", name[i]);
+
+    return 0;
 }
