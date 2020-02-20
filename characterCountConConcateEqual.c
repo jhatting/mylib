@@ -32,14 +32,17 @@ _._._._._._._._._._._._._._._._._._._._._.*/
 #include <stdlib.h>
 
 int StringLength (const char string[]);
+void concate(char result, const char str[], const char str1[]);
 
 int main ()
 {
     char word1[] = "Jarrod is a god";
     char word2[] = "ok";
     char word3[] = "Whatever";
+    char result[50];
 
     printf("%d      %d      %d\n", StringLength(word1), StringLength(word2), StringLength(word3));
+    printf("%s", concate(result, word1, word2);
 
     return (0);
 }
@@ -52,4 +55,19 @@ int StringLength (const char string[])
         ++count;
 
         return (count);
+}
+
+void concate(char result, const char str[], const char str1[])
+{
+    int i ;
+    int j ;
+
+    for (i = 0; str1[i] != '\0'; ++i)
+    {
+        result[i] = str[i];
+    }
+    for (j = 0; str2[j] != '\0'; ++j)
+        result [i + j] = str2[j];
+
+        return [i + j] = '\0';
 }
