@@ -2,11 +2,11 @@
 
 * File Name : characterStringTest.c
 
-* Purpose : Testing Strings
+* Purpose : Testing Strings testing the length of  string 
 
 * Creation Date : 24-01-2020
 
-* Last Modified : Fri Jan 24 14:21:34 2020
+* Last Modified : Fri Feb 21 14:41:38 2020
 
 * Created By : Jarrod Hatting
 _._._._._._._._._._._._._._._._._._._._._.*/
@@ -16,7 +16,7 @@ _._._._._._._._._._._._._._._._._._._._._.*/
 
 int main ()
 {
-    char myString[] = "My name is JARBROG";
+    char myString[] = "My name is JARROD";
 
     printf("The length is %lu", strlen(myString));
     return (0);
