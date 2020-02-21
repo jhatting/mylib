@@ -8,17 +8,17 @@
 -function should take a character array as a parameter
 -Should return an int (the length)
 
-2- Function to concatenate two character strings
-- cannot use the strcat library function
-- function should take 3 parameters
-    -char result[]
-    -const char str1[]
-    -const char str2[]
-    -can return void
+2 - Function to concatenate two character strings
+        - cannot use the strcat library function
+        - function should take 3 parameters
+            -char result[]
+            -const char str1[]
+            -const char str2[]
+            -can return void
 
-3- Function that determines if two strings are equal 
-    - cannot use strcmp library function
-    - function should take two const char arrays as parameters and return a Boolean of true if they are equal and false otherwise
+3 - Function that determines if two strings are equal 
+        - cannot use strcmp library function
+        - function should take two const char arrays as parameters and return a Boolean of true if they are equal and false otherwise
 
 
 * Creation Date : 19-02-2020
