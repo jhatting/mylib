@@ -2,12 +2,12 @@
 
 * File Name : arrayTest.c
 
-* Purpose :First test using arrays to store 10 numbers
-and finding the average of those numbers.
+* Purpose ::::First test using arrays to store 10 numbers
+and finding the average of those numbers....
 
 * Creation Date : 11-12-2019
 
-* Last Modified : Mon Dec 16 16:48:38 2019
+* Last Modified : Mon Feb 24 17:25:34 2020
 
 * Created By : Jarrod Hatting
 _._._._._._._._._._._._._._._._._._._._._.*/
