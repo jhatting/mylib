@@ -2,12 +2,12 @@
 
 * File Name : oddsOrEven.c
 
-* Purpose : Determines if a number is even or odd. 
+* Purpose :::: Determines if a number is even or odd. 
             practising "if statements".
 
 * Creation Date : 25-11-2019
 
-* Last Modified : Mon Nov 25 13:04:45 2019
+* Last Modified : Mon Feb 24 17:26:02 2020
 
 * Created By : Jarrod Hatting
 _._._._._._._._._._._._._._._._._._._._._.*/
