@@ -2,12 +2,12 @@
 
 * File Name : signElseIf.c
 
-* Purpose :Implements the sign function practising
+* Purpose :::::Implements the sign function practising
             the else if statement.
 
 * Creation Date : 25-11-2019
 
-* Last Modified : Mon Nov 25 14:33:44 2019
+* Last Modified : Mon Feb 24 17:26:29 2020
 
 * Created By : Jarrod Hatting
 _._._._._._._._._._._._._._._._._._._._._.*/
